@@ -1,0 +1,60 @@
+@import 'tailwindcss';
+@import './theme.css';
+@import './utilities.css';
+@import './custom.css' layer(utilities);
+
+@source '../../vendor/tailpress/framework/**/*.php';
+@source '../../vendor/tailpress/framework/**/**/*.php';
+
+/* 1. Definimos tu paleta de colores corporativa y minimalista */
+@theme {
+  --color-brand-dark: #0f1115;
+  --color-brand-gold: #c5a059;
+  --color-brand-light: #f3f4f6;
+  --color-brand-muted: #9ca3af;
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+  max-width: 1280px; /* Esto evita que se vea "muy ancho" en pantallas grandes */
+}
+
+/* 2. Aplicamos el fondo al body y mantenemos la compatibilidad de bordes */
+@layer base {
+  body {
+    /* Aquí estaba el error, ya está actualizado con los prefijos 'brand-' */
+    @apply bg-brand-dark text-brand-light antialiased selection:bg-brand-gold selection:text-brand-dark flex flex-col min-h-screen;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-zinc-200, currentColor);
+  }
+}
+
+@layer components {
+  .cf7-input {
+    @apply w-full bg-brand-dark border border-white/10 rounded-xl px-4 py-3 text-brand-light focus:outline-none focus:border-brand-gold/50 focus:ring-1 focus:ring-brand-gold/50 transition-all;
+  }
+  
+  /* Ajuste para que el select no se vea feo en Windows/Mac */
+  select.cf7-input {
+    @apply appearance-none bg-brand-dark;
+  }
+}
+
+@layer utilities {
+  /* Ocultar la barra de scroll nativa para los carruseles */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
