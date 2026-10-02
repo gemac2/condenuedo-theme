@@ -17,23 +17,23 @@ get_header();
         </div>
 
         <div class="container relative z-10 mx-auto px-6 text-center">
-            <span class="inline-block py-1.5 px-4 mb-8 border border-brand-gold/30 rounded-full bg-brand-gold/10 text-brand-gold text-[10px] font-bold tracking-[0.25em] uppercase">
-                Excelencia en el Sonido del Shofar
+            <span class="inline-block max-w-[90vw] py-1.5 px-4 mb-8 border border-brand-gold/30 rounded-full bg-brand-gold/10 text-brand-gold text-[9px] sm:text-[10px] font-bold tracking-[0.15em] sm:tracking-[0.25em] uppercase leading-relaxed">
+                Academia y Tienda de Shofares y Elementos Bíblicos
             </span>
 
-            <h1 class="text-5xl md:text-8xl font-extrabold leading-[1.1] mb-10 tracking-tight">
-                Despierta el <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-200 to-brand-gold">Sonido</span> <br> de una Nueva Temporada
+            <h1 class="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-extrabold leading-[1.1] mb-10 tracking-tight">
+                Despierta el <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-yellow-200 to-brand-gold">Sonido</span> <br class="hidden sm:block"> de una Nueva Temporada
             </h1>
 
             <p class="max-w-2xl mx-auto text-lg md:text-xl text-brand-light/60 mb-14 leading-relaxed font-light">
-                Aprende el arte milenario del Shofar en nuestra academia y adquiere piezas únicas seleccionadas con los más altos estándares de calidad y resonancia.
+                Aprende el arte milenario del Shofar en nuestra academia y adquiere shofares y elementos bíblicos seleccionados con los más altos estándares de calidad.
             </p>
 
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="<?php echo esc_url( home_url( '/academia' ) ); ?>" class="group relative px-12 py-5 bg-brand-gold text-brand-dark text-lg font-bold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_10px_30px_rgba(197,160,89,0.3)]">
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-4 sm:gap-6 max-w-md mx-auto sm:max-w-none">
+                <a href="<?php echo esc_url( home_url( '/academia' ) ); ?>" class="group relative text-center px-8 sm:px-12 py-4 sm:py-5 bg-brand-gold text-brand-dark text-base sm:text-lg font-bold rounded-full overflow-hidden transition-all duration-300 hover:scale-105 active:scale-95 shadow-[0_10px_30px_rgba(197,160,89,0.3)]">
                     Explorar Academia
                 </a>
-                <a href="<?php echo esc_url( home_url( '/tienda' ) ); ?>" class="px-12 py-5 border border-brand-light/20 text-brand-light text-lg font-bold rounded-full hover:bg-brand-light hover:text-brand-dark transition-all duration-300">
+                <a href="<?php echo esc_url( home_url( '/tienda' ) ); ?>" class="text-center px-8 sm:px-12 py-4 sm:py-5 border border-brand-light/20 text-brand-light text-base sm:text-lg font-bold rounded-full hover:bg-brand-light hover:text-brand-dark transition-all duration-300">
                     Ver Tienda
                 </a>
             </div>
@@ -168,10 +168,10 @@ get_header();
             <div id="testimonio-slider" class="flex overflow-x-auto snap-x snap-mandatory no-scrollbar gap-6 pb-8 scroll-smooth">
                 
                 <!-- Tarjeta 1: Yessica Bonilla -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
                     <!-- Encabezado con gap-8 para mayor separación -->
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-yessica.jpeg" alt="Yessica Bonilla" class="w-full h-full object-cover object-top opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -189,9 +189,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 2: Luis Rivas -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-luis.jpeg" alt="Luis Rivas" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -208,9 +208,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 3: Emmanuel Navas -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-emmanuel.jpeg" alt="Emmanuel Navas" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -227,9 +227,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 4: Angel Arroyo Briceño -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-angel.jpeg" alt="Angel Arroyo Briceño" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -246,9 +246,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 5: Karlines Jiménez -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-karlines.jpeg" alt="Karlines Jiménez" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -265,9 +265,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 6: Zuleima Urrego -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/foto-zuleima.jpeg" alt="Zuleima Urrego" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
@@ -284,9 +284,9 @@ get_header();
                 </div>
 
                 <!-- Tarjeta 7: Jhorman Torres -->
-                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
-                    <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
-                        <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
+                <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[580px] sm:h-[640px] md:h-[650px] flex flex-col bg-brand-dark p-6 sm:p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
+                    <div class="flex items-center gap-4 sm:gap-8 mb-6 pb-6 border-b border-white/10 relative">
+                        <div class="w-24 h-32 sm:w-32 sm:h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
                             <img src="<?php echo get_template_directory_uri(); ?>/images/jhorman.png" alt="Jhorman Torres" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">

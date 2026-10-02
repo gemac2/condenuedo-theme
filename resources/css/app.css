@@ -58,18 +58,74 @@
   }
 }
 
-/* Forzar tamaño del logo CONDENUEDO en TailPress */
+/* Forzar tamaño del logo CONDENUEDO en TailPress (escala en móvil) */
 header img[src*="logo-removebg"] {
-  height: 80px !important;
+  height: 48px !important;
   max-height: none !important;
   width: auto !important;
   max-width: none !important;
   object-fit: contain !important;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
+  header img[src*="logo-removebg"] {
+    height: 56px !important;
+  }
+}
+
+@media (min-width: 782px) {
   header img[src*="logo-removebg"] {
     height: 105px !important;
+  }
+}
+
+/* Evitar desbordamiento horizontal accidental en móvil */
+html,
+body {
+  overflow-x: hidden;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Ajustes responsivos globales para WooCommerce */
+@media (max-width: 781px) {
+  .woocommerce table.shop_table,
+  .woocommerce-cart-form__contents {
+    font-size: 0.8125rem;
+  }
+
+  .woocommerce .cart-collaterals,
+  .woocommerce-checkout-review-order {
+    width: 100%;
+  }
+
+  .woocommerce ul.products {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1rem !important;
+  }
+
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2,
+  .woocommerce-page .col2-set .col-1,
+  .woocommerce-page .col2-set .col-2 {
+    width: 100%;
+    float: none;
+  }
+}
+
+/* El formulario de añadir al carrito se apila en móvil */
+@media (max-width: 599px) {
+  .dynamic-woo-form form.cart {
+    flex-wrap: wrap !important;
+  }
+
+  .dynamic-woo-form form.cart .single_add_to_cart_button {
+    width: 100% !important;
+    flex: 1 1 100% !important;
   }
 }
 

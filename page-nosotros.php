@@ -30,7 +30,7 @@ get_header(); ?>
                 <div class="absolute -inset-1 bg-gradient-to-r from-brand-gold/30 to-brand-gold/5 rounded-3xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
                 
                 <!-- Contenedor principal de la imagen -->
-                <div class="w-full h-[400px] bg-[#13151a] border border-white/10 rounded-3xl relative z-10 overflow-hidden">
+                <div class="w-full h-[280px] sm:h-[400px] bg-[#13151a] border border-white/10 rounded-3xl relative z-10 overflow-hidden">
                     
                     <!-- La Imagen -->
                     <img 
@@ -56,7 +56,7 @@ get_header(); ?>
                     <p class="text-brand-light/40 text-xs uppercase tracking-wider">Academia Guerreros del Shofar</p>
                 </div>
 
-                <div class="lg:col-span-2 text-brand-light/80 space-y-6 text-base leading-relaxed font-light text-justify md:columns-1 lg:columns-2 gap-8">
+                <div class="lg:col-span-2 text-brand-light/80 space-y-6 text-base leading-relaxed font-light text-left lg:text-justify lg:columns-2 gap-8">
                     
                     <p class="mb-4">
                         <span class="float-left text-5xl md:text-6xl font-serif font-bold text-brand-gold mr-3 mt-1 leading-none">I</span>
@@ -118,7 +118,7 @@ get_header(); ?>
                 </div>
 
                 <!-- Columna Derecha: El texto en formato periodístico (Grid de 2 columnas) -->
-                <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 text-brand-light/80 text-[15px] leading-relaxed">
+                <div class="w-full lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-brand-light/80 text-[15px] leading-relaxed">
                     
                     <!-- Mitad Izquierda del Texto -->
                     <div class="space-y-6">
