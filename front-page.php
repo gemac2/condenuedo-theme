@@ -287,7 +287,7 @@ get_header();
                 <div class="snap-center shrink-0 w-[85vw] md:w-[450px] h-[650px] flex flex-col bg-brand-dark p-8 rounded-3xl border border-white/5 relative group hover:border-brand-gold/30 transition-colors">
                     <div class="flex items-center gap-8 mb-6 pb-6 border-b border-white/10 relative">
                         <div class="w-32 h-40 md:w-36 md:h-48 rounded-2xl bg-[#13151a] border border-brand-gold/30 overflow-hidden flex-shrink-0 shadow-[0_0_20px_rgba(197,160,89,0.1)] relative">
-                            <img src="<?php echo get_template_directory_uri(); ?>/images/foto-jhorman.jpeg" alt="Jhorman Torres" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/jhorman.png" alt="Jhorman Torres" class="w-full h-full object-cover object-center opacity-90 group-hover:opacity-100 transition-opacity">
                         </div>
                         <div class="flex-1 pr-4">
                             <h5 class="text-white font-extrabold text-xl mb-1">Jhorman Torres</h5>

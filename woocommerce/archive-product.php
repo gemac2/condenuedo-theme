@@ -1,6 +1,7 @@
 <?php
 /**
  * Catálogo de Productos Real - WooCommerce + Tailwind v4
+ * Tema: TailPress (Desarrollo Local en VS Code)
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -11,14 +12,15 @@ get_header(); ?>
 
 <div class="bg-brand-dark text-brand-light min-h-screen font-sans">
     
-    <header class="relative max-w-7xl mx-auto pt-24 pb-16 px-4 sm:px-6 lg:px-8 text-center">
+    <!-- Hero / Banner Superior del Catálogo (Convertido a Section para evitar colisión con el Header global) -->
+    <section class="max-w-7xl mx-auto pt-12 pb-10 px-4 sm:px-6 lg:px-8 text-center">
         <span class="inline-flex items-center gap-2 text-brand-gold text-[10px] uppercase font-bold tracking-[0.2em] border border-brand-gold/20 bg-brand-gold/5 px-3.5 py-1.5 rounded-full">
-            Colección Exclusiva 2026
+            Colección Exclusiva
         </span>
-        <h1 class="text-4xl sm:text-5xl font-black mt-6 tracking-tight uppercase">
+        <h1 class="text-3xl sm:text-5xl font-black mt-4 tracking-tight uppercase">
             La <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-gold via-brand-light to-brand-gold">Tienda</span>
         </h1>
-    </header>
+    </section>
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-24">
         
@@ -34,6 +36,7 @@ get_header(); ?>
                     
                     <article class="group bg-brand-dark/40 border border-white/5 rounded-2xl overflow-hidden transition-all duration-500 hover:border-brand-gold/30 flex flex-col justify-between">
                         
+                        <!-- Contenedor de Imagen -->
                         <div class="relative overflow-hidden h-64 bg-black/20 w-full flex items-center justify-center border-b border-white/5">
                             <?php 
                             if ( has_post_thumbnail() ) {
@@ -44,6 +47,7 @@ get_header(); ?>
                             ?>
                         </div>
 
+                        <!-- Información y Acción -->
                         <div class="p-6 flex-1 flex flex-col justify-between space-y-6">
                             <div class="space-y-3">
                                 <span class="text-[10px] text-brand-gold font-bold uppercase tracking-widest block">
@@ -69,8 +73,10 @@ get_header(); ?>
                                     </span>
                                 </div>
                                 
-                                <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 bg-brand-dark border border-white/10 text-brand-light hover:bg-brand-gold hover:text-brand-dark text-[11px] font-bold uppercase tracking-wider px-4 py-3 rounded-xl transition-all duration-300">
-                                    Ver Pieza
+                                <!-- Botón de Compra Directa al Carrito Local o Vista de Producto -->
+                                <a href="?add-to-cart=<?php echo get_the_ID(); ?>" 
+                                   class="inline-flex items-center gap-2 bg-brand-dark border border-white/10 text-brand-light hover:bg-brand-gold hover:text-brand-dark text-[11px] font-bold uppercase tracking-wider px-4 py-3 rounded-xl transition-all duration-300">
+                                    Añadir al Carrito
                                 </a>
                             </div>
                         </div>
@@ -87,7 +93,7 @@ get_header(); ?>
 
         <?php else : ?>
             <div class="text-center py-24 border border-dashed border-white/10 rounded-2xl max-w-md mx-auto">
-                <p class="text-brand-muted text-sm font-mono">No hay shofares publicados.</p>
+                <p class="text-brand-muted text-sm font-mono">No hay shofares o mantos publicados.</p>
             </div>
         <?php endif; ?>
         
