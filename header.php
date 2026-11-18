@@ -18,7 +18,7 @@
             <div class="flex-shrink-0 flex items-center">
                 <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-flex items-center">
                     <img 
-                        src="<?php echo get_template_directory_uri(); ?>/images/logo-removebg.png" 
+                        src="<?php echo esc_url( get_template_directory_uri() . '/images/logo-condenuedo.png' ); ?>"
                         alt="<?php bloginfo('name'); ?>" 
                         class="h-12 sm:h-14 md:h-20 w-auto object-contain transition-transform duration-300 hover:scale-105 origin-left block"
                     >

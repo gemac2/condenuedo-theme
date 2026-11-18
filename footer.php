@@ -7,8 +7,8 @@
             
             <div class="flex flex-col items-start">
                 
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block -mt-10 -mb-10">
-                    <img src="<?php echo get_template_directory_uri(); ?>/images/logo-removebg.png" alt="Con Denuedo Logo" class="h-[140px] w-auto object-contain opacity-90">
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="inline-block">
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/images/logo-condenuedo.png' ); ?>" alt="Logo de Con Denuedo" class="h-24 w-auto object-contain">
                 </a>
                 
                 <p class="text-brand-light/50 text-sm leading-relaxed pr-4 mt-4 mb-6 relative z-10">
