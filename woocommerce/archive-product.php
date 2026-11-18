@@ -74,9 +74,9 @@ get_header(); ?>
                                 </div>
                                 
                                 <!-- Botón de Compra Directa al Carrito Local o Vista de Producto -->
-                                <a href="?add-to-cart=<?php echo get_the_ID(); ?>" 
+                                <a href="<?php echo esc_url( $product->add_to_cart_url() ); ?>"
                                    class="inline-flex items-center gap-2 bg-brand-dark border border-white/10 text-brand-light hover:bg-brand-gold hover:text-brand-dark text-[11px] font-bold uppercase tracking-wider px-4 py-3 rounded-xl transition-all duration-300">
-                                    Añadir al Carrito
+                                    <?php echo esc_html( $product->add_to_cart_text() ); ?>
                                 </a>
                             </div>
                         </div>
@@ -93,7 +93,7 @@ get_header(); ?>
 
         <?php else : ?>
             <div class="text-center py-24 border border-dashed border-white/10 rounded-2xl max-w-md mx-auto">
-                <p class="text-brand-muted text-sm font-mono">No hay shofares o mantos publicados.</p>
+                <p class="text-brand-muted text-sm font-mono">No hay productos publicados.</p>
             </div>
         <?php endif; ?>
         

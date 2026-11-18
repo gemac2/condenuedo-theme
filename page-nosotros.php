@@ -54,6 +54,7 @@ get_header(); ?>
                     <div class="pt-4 border-t border-white/10 w-16"></div>
                     <p class="text-brand-light font-bold text-sm">Instructor Principal & Administrador</p>
                     <p class="text-brand-light/40 text-xs uppercase tracking-wider">Academia Guerreros del Shofar</p>
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/images/fundador2.jpeg' ); ?>" alt="Retrato del fundador de Con Denuedo" loading="lazy" class="w-full max-w-xs aspect-[4/5] object-cover object-top rounded-2xl border border-white/10">
                 </div>
 
                 <div class="lg:col-span-2 text-brand-light/80 space-y-6 text-base leading-relaxed font-light text-left lg:text-justify lg:columns-2 gap-8">
@@ -107,6 +108,7 @@ get_header(); ?>
                         Testimonio de<br>la Cofundadora
                     </h2>
                     
+                    <img src="<?php echo esc_url( get_template_directory_uri() . '/images/fundadora2.jpeg' ); ?>" alt="Retrato de la cofundadora de Con Denuedo" loading="lazy" class="w-full max-w-xs aspect-[4/5] object-cover object-top rounded-2xl border border-white/10 mb-6">
                     <div class="space-y-2">
                         <p class="text-white font-bold text-[15px]">
                             Fundadora & Administradora

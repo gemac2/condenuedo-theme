@@ -324,12 +324,9 @@ get_header();
                     <p class="text-brand-light/70 mb-8 leading-relaxed">
                         Somos una familia apasionada por el diseño de Dios. Como instructor principal y administrador, junto a mi esposa, hemos asumido el llamado de levantar la primera institución de este tipo en Venezuela. Nuestro compromiso es entregar impartición real en cada lección y excelencia en cada instrumento que llega a tus manos.
                     </p>
-                    <div class="w-full h-64 bg-white/5 border border-white/10 rounded-2xl flex items-center justify-center overflow-hidden relative group">
-                        <img 
-                            src="<?php echo get_template_directory_uri(); ?>/images/fundadores.jpeg" 
-                            alt="Fundadores de Con Denuedo" 
-                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                        >
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/images/fundador2.jpeg' ); ?>" alt="Fundador de Con Denuedo" loading="lazy" class="w-full h-64 sm:h-80 object-cover object-top rounded-2xl border border-white/10">
+                        <img src="<?php echo esc_url( get_template_directory_uri() . '/images/fundadora2.jpeg' ); ?>" alt="Cofundadora de Con Denuedo" loading="lazy" class="w-full h-64 sm:h-80 object-cover object-top rounded-2xl border border-white/10">
                     </div>
                 </div>
 
