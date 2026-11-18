@@ -59,7 +59,7 @@
 }
 
 /* Forzar tamaño del logo CONDENUEDO en TailPress (escala en móvil) */
-header img[src*="logo-removebg"] {
+header img[src*="logo-condenuedo.png"] {
   height: 48px !important;
   max-height: none !important;
   width: auto !important;
@@ -68,15 +68,22 @@ header img[src*="logo-removebg"] {
 }
 
 @media (min-width: 600px) {
-  header img[src*="logo-removebg"] {
+  header img[src*="logo-condenuedo.png"] {
     height: 56px !important;
   }
 }
 
 @media (min-width: 782px) {
-  header img[src*="logo-removebg"] {
-    height: 105px !important;
+  header img[src*="logo-condenuedo.png"] {
+    height: 80px !important;
   }
+}
+
+/* WooCommerce aplica height:auto a todas las imágenes, incluido el logo del pie. */
+footer img[src*="logo-condenuedo.png"] {
+  height: 96px !important;
+  width: auto !important;
+  object-fit: contain;
 }
 
 /* Evitar desbordamiento horizontal accidental en móvil */
@@ -128,4 +135,3 @@ iframe {
     flex: 1 1 100% !important;
   }
 }
-
